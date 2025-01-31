@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.popup-container {
+  width: 400px;
+  max-height: 600px;
+  padding: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.section {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 12px;
+  color: #2d2d2d;
+}
+
+.token-display {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.token-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.token-item:not(:last-child) {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.token-item span {
+  color: #495057;
+  font-size: 13px;
+}
+
+.token-item code {
+  background: #e9ecef;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 11px;
+  color: #212529;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #495057;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 6px 10px;
+  border: 2px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.save-button {
+  background: #4dabf7;
+  color: white;
+}
+
+.save-button:hover {
+  background: #3b9ee6;
+}
+
+.update-button {
+  background: #51cf66;
+  color: white;
+}
+
+.update-button:hover {
+  background: #40c057;
+}
+
+.update-button.active {
+  background: #37b24d;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.status-message {
+  margin-top: 12px;
+  padding: 8px;
+  background: #e9ecef;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+  color: #495057;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
